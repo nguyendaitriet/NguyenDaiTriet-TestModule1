@@ -2,7 +2,7 @@ function checkVowel(array) {
     let vowels = /[aoeui]/;
     let count = 0;
     for (let value of array) {
-        if (vowels.test(value)) {
+        if (vowels.test(value.toLowerCase())) {
             count ++;
         }
     };
@@ -12,7 +12,7 @@ function checkVowel(array) {
     return false;
 }
 
-let characterString = "aboura1244c";
+let characterString = "UEOAI";
 let countVowel = checkVowel(characterString);
 
 if (countVowel) {
